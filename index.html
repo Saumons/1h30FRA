@@ -11,653 +11,698 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation principale -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-icon">🐾</span>
-                <span class="logo-text">Animaux & Politique</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#associations" data-section="associations">Associations</a></li>
-                <li><a href="#tendances" data-section="tendances">Tendances</a></li>
-                <li><a href="#candidats" data-section="candidats">Candidats</a></li>
-                <li><a href="#histoire" data-section="histoire">Histoire</a></li>
-            </ul>
+<!-- Navigation principale -->
+<nav class="main-nav">
+    <div class="nav-container">
+        <div class="logo">
+            <span class="logo-icon">🐾</span>
+            <span class="logo-text">Animaux & Politique</span>
         </div>
-    </nav>
+        <ul class="nav-links">
+            <li><a href="#associations" data-section="associations">Associations</a></li>
+            <li><a href="#tendances" data-section="tendances">Tendances</a></li>
+            <li><a href="#candidats" data-section="candidats">Candidats</a></li>
+            <li><a href="#histoire" data-section="histoire">Histoire</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-label">Dossier Spécial</div>
-            <h1 class="hero-title">
-                <span class="title-line">Les animaux,</span>
-                <span class="title-line">nouveaux acteurs</span>
-                <span class="title-line">des municipales</span>
-            </h1>
-            <p class="hero-subtitle">
-                Comment la cause animale s'impose progressivement dans les programmes 
-                des candidats aux élections municipales françaises
+<!-- Hero Section -->
+<header class="hero">
+    <div class="hero-content">
+        <div class="hero-label">Dossier Spécial</div>
+        <h1 class="hero-title">
+            <span class="title-line">Les animaux,</span>
+            <span class="title-line">nouveaux acteurs</span>
+            <span class="title-line">des municipales</span>
+        </h1>
+        <p class="hero-subtitle">
+            Comment la cause animale s'impose progressivement dans les programmes
+            des candidats aux élections municipales françaises
+        </p>
+        <button class="cta-button" onclick="scrollToSection('associations')">
+            Explorer le dossier
+        </button>
+    </div>
+    <!-- Placeholder pour image hero - Photo d'un animal urbain ou manifestation -->
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=1200"
+             alt="Chien en milieu urbain"
+             loading="lazy">
+    </div>
+</header>
+
+<!-- Section 1: Les Associations -->
+<section id="associations" class="section section-associations">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">Les associations mobilisées</h2>
+            <p class="section-intro">
+                Des organisations qui poussent les candidats à prendre des engagements clairs
+                pour le bien-être animal en milieu urbain
             </p>
-            <button class="cta-button" onclick="scrollToSection('associations')">
-                Explorer le dossier
-            </button>
         </div>
-        <!-- Placeholder pour image hero - Photo d'un animal urbain ou manifestation -->
-        <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1530126483408-aa533e55bdb2?w=1200" 
-                 alt="Chien en milieu urbain" 
-                 loading="lazy">
-        </div>
-    </header>
 
-    <!-- Section 1: Les Associations -->
-    <section id="associations" class="section section-associations">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">Les associations mobilisées</h2>
-                <p class="section-intro">
-                    Des organisations qui poussent les candidats à prendre des engagements clairs 
-                    pour le bien-être animal en milieu urbain
-                </p>
-            </div>
-
-            <div class="content-grid">
-                <!-- Carte Association 1 -->
-                <article class="association-card">
-                    <div class="card-image">
-                        <!-- Placeholder pour logo/photo association -->
-                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600" 
-                             alt="Association pour la protection animale" 
-                             loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">L214 Éthique & Animaux</h3>
-                        <p class="card-description">
-                            Mobilise les candidats sur la fin des cantines 100% carnées, 
-                            la végétalisation des menus scolaires et l'arrêt des subventions 
-                            aux activités exploitant les animaux (cirques, corridas).
-                        </p>
-                        <ul class="engagement-list">
-                            <li>✓ Menu végétarien quotidien dans les cantines</li>
-                            <li>✓ Fin des spectacles avec animaux</li>
-                            <li>✓ Sensibilisation dans les écoles</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Carte Association 2 -->
-                <article class="association-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600" 
-                             alt="Refuge pour animaux" 
-                             loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Fondation 30 Millions d'Amis</h3>
-                        <p class="card-description">
-                            Interpelle les candidats sur la stérilisation des chats errants, 
-                            la création de refuges municipaux et la lutte contre la maltraitance.
-                        </p>
-                        <ul class="engagement-list">
-                            <li>✓ Campagnes de stérilisation gratuites</li>
-                            <li>✓ Refuges municipaux aux normes</li>
-                            <li>✓ Police municipale formée</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Carte Association 3 -->
-                <article class="association-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=600" 
-                             alt="Manifestation pour les animaux" 
-                             loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Parti Animaliste</h3>
-                        <p class="card-description">
-                            Présente des candidats dans plusieurs villes et diffuse un 
-                            programme en 50 mesures pour faire entrer la cause animale 
-                            dans l'action municipale.
-                        </p>
-                        <ul class="engagement-list">
-                            <li>✓ Fin de l'élevage intensif périurbain</li>
-                            <li>✓ Espaces verts favorables à la biodiversité</li>
-                            <li>✓ Adjoint délégué au bien-être animal</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <!-- Carte Association 4 -->
-                <article class="association-card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1589608152089-07f95f3641b9?w=600" 
-                             alt="Biodiversité urbaine" 
-                             loading="lazy">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">LPO - Ligue pour la Protection des Oiseaux</h3>
-                        <p class="card-description">
-                            Encourage les villes à préserver la biodiversité locale, 
-                            installer des nichoirs et limiter la pollution lumineuse 
-                            nocturne nuisible aux oiseaux et insectes.
-                        </p>
-                        <ul class="engagement-list">
-                            <li>✓ Plans de préservation de la biodiversité</li>
-                            <li>✓ Corridors écologiques urbains</li>
-                            <li>✓ Réduction de la pollution lumineuse</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Encadré statistiques -->
-            <div class="stats-box">
-                <div class="stat-item">
-                    <div class="stat-number">78%</div>
-                    <div class="stat-label">des Français favorables à plus de protection animale</div>
+        <div class="content-grid">
+            <!-- Carte Association 1 -->
+            <article class="association-card">
+                <div class="card-image">
+                    <!-- Placeholder pour logo/photo association -->
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600"
+                         alt="Association pour la protection animale"
+                         loading="lazy">
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">250+</div>
-                    <div class="stat-label">villes sollicitées par les associations</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">15</div>
-                    <div class="stat-label">engagements types proposés aux candidats</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Les Tendances -->
-    <section id="tendances" class="section section-tendances">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Pourquoi cette tendance ?</h2>
-                <p class="section-intro">
-                    Plusieurs facteurs expliquent l'émergence de la cause animale 
-                    comme enjeu électoral municipal
-                </p>
-            </div>
-
-            <div class="tendances-grid">
-                <!-- Raison 1 -->
-                <article class="tendance-card card-primary">
-                    <div class="tendance-icon">📊</div>
-                    <h3 class="tendance-title">Évolution sociétale</h3>
-                    <p class="tendance-text">
-                        La sensibilité envers les animaux a considérablement augmenté. 
-                        Près de 50% des foyers français possèdent un animal de compagnie. 
-                        Les scandales d'élevages et d'abattoirs ont éveillé les consciences.
+                <div class="card-content">
+                    <h3 class="card-title">L214 Éthique & Animaux</h3>
+                    <p class="card-description">
+                        Mobilise les candidats sur la fin des cantines 100% carnées,
+                        la végétalisation des menus scolaires et l'arrêt des subventions
+                        aux activités exploitant les animaux (cirques, corridas).
                     </p>
-                    <div class="tendance-image">
-                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600" 
-                             alt="Famille avec animal" 
-                             loading="lazy">
-                    </div>
-                </article>
-
-                <!-- Raison 2 -->
-                <article class="tendance-card card-secondary">
-                    <div class="tendance-icon">🌱</div>
-                    <h3 class="tendance-title">Lien avec l'écologie</h3>
-                    <p class="tendance-text">
-                        La cause animale rejoint les préoccupations environnementales : 
-                        biodiversité, agriculture durable, réduction de la consommation 
-                        de viande. Un électorat écologique de plus en plus mobilisé.
-                    </p>
-                    <div class="tendance-image">
-                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600" 
-                             alt="Nature en ville" 
-                             loading="lazy">
-                    </div>
-                </article>
-
-                <!-- Raison 3 -->
-                <article class="tendance-card card-accent">
-                    <div class="tendance-icon">🏛️</div>
-                    <h3 class="tendance-title">Compétences municipales élargies</h3>
-                    <p class="tendance-text">
-                        Les villes ont des leviers d'action concrets : gestion des refuges, 
-                        cantines scolaires, autorisations de spectacles, espaces verts, 
-                        sensibilisation... Des mesures visibles et applicables rapidement.
-                    </p>
-                    <div class="tendance-image">
-                        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600" 
-                             alt="Mairie et ville" 
-                             loading="lazy">
-                    </div>
-                </article>
-
-                <!-- Raison 4 -->
-                <article class="tendance-card card-highlight">
-                    <div class="tendance-icon">👥</div>
-                    <h3 class="tendance-title">Pression électorale</h3>
-                    <p class="tendance-text">
-                        Les défenseurs des animaux représentent un électorat mobilisé 
-                        et capable de faire basculer des scrutins serrés. Les candidats 
-                        cherchent à capter ces voix sans s'aliéner d'autres segments.
-                    </p>
-                    <div class="tendance-image">
-                        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600" 
-                             alt="Vote et élection" 
-                             loading="lazy">
-                    </div>
-                </article>
-            </div>
-
-            <!-- Citation -->
-            <blockquote class="quote-block">
-                <p class="quote-text">
-                    "La question animale n'est plus une question de niche. Elle traverse 
-                    tous les partis et toutes les générations. Les élus locaux l'ont compris."
-                </p>
-                <cite class="quote-author">— Sociologue spécialiste des mutations politiques</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <!-- Section 3: Les Candidats -->
-    <section id="candidats" class="section section-candidats">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2 class="section-title">Position des candidats</h2>
-                <p class="section-intro">
-                    Entre engagements assumés et indifférence persistante, 
-                    un clivage politique se dessine
-                </p>
-            </div>
-
-            <!-- Sous-section Pro-Protection -->
-            <div class="candidats-subsection pro-protection">
-                <h3 class="subsection-title">
-                    <span class="title-icon">✓</span>
-                    Les candidats engagés pour la protection animale
-                </h3>
-
-                <div class="candidats-list">
-                    <!-- Candidat Pro 1 -->
-                    <article class="candidat-item pro-item">
-                        <div class="candidat-photo">
-                            <!-- Placeholder photo candidat -->
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Marie Dupont</h4>
-                            <p class="candidat-ville">Candidate EELV - Lyon</p>
-                            <p class="candidat-discours">
-                                "Nous créerons un poste d'adjoint au bien-être animal et 
-                                lancerons un plan 'Lyon, ville amie des animaux' avec 
-                                cantines 50% végétariennes, refuges modernisés et interdiction 
-                                des cirques avec animaux sauvages."
-                            </p>
-                            <div class="engagement-badge">15 engagements signés</div>
-                        </div>
-                    </article>
-
-                    <!-- Candidat Pro 2 -->
-                    <article class="candidat-item pro-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Thomas Bernard</h4>
-                            <p class="candidat-ville">Candidat PS - Strasbourg</p>
-                            <p class="candidat-discours">
-                                "La protection animale est un marqueur de civilisation. 
-                                Nous proposerons une alternative végétarienne quotidienne 
-                                dans toutes les cantines et doublerons le budget du refuge 
-                                municipal pour améliorer les conditions d'accueil."
-                            </p>
-                            <div class="engagement-badge">12 engagements signés</div>
-                        </div>
-                    </article>
-
-                    <!-- Candidat Pro 3 -->
-                    <article class="candidat-item pro-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Sophie Rousseau</h4>
-                            <p class="candidat-ville">Candidate Parti Animaliste - Bordeaux</p>
-                            <p class="candidat-discours">
-                                "Les animaux méritent une représentation politique dédiée. 
-                                Notre programme prévoit la fin des subventions aux activités 
-                                exploitant les animaux, la création de couloirs verts pour la 
-                                biodiversité et l'interdiction des feux d'artifice traumatisants."
-                            </p>
-                            <div class="engagement-badge">20 engagements signés</div>
-                        </div>
-                    </article>
-
-                    <!-- Candidat Pro 4 -->
-                    <article class="candidat-item pro-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Pierre Lefebvre</h4>
-                            <p class="candidat-ville">Candidat LFI - Lille</p>
-                            <p class="candidat-discours">
-                                "La justice sociale inclut les animaux. Nous garantirons 
-                                l'accès gratuit aux soins vétérinaires d'urgence via un 
-                                dispensaire municipal et lutterons contre les trafics 
-                                d'animaux de compagnie."
-                            </p>
-                            <div class="engagement-badge">10 engagements signés</div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Sous-section Indifférents -->
-            <div class="candidats-subsection indifferents">
-                <h3 class="subsection-title">
-                    <span class="title-icon">—</span>
-                    Les candidats indifférents ou réticents
-                </h3>
-
-                <div class="candidats-list">
-                    <!-- Candidat Indifférent 1 -->
-                    <article class="candidat-item neutral-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Jean Moreau</h4>
-                            <p class="candidat-ville">Candidat LR - Marseille</p>
-                            <p class="candidat-discours">
-                                "Nous avons d'autres priorités : sécurité, propreté, emploi. 
-                                Le refuge actuel fonctionne correctement. Je ne vois pas 
-                                l'intérêt de créer un poste d'adjoint dédié aux animaux 
-                                quand nos finances sont tendues."
-                            </p>
-                            <div class="engagement-badge neutral-badge">Aucun engagement</div>
-                        </div>
-                    </article>
-
-                    <!-- Candidat Indifférent 2 -->
-                    <article class="candidat-item neutral-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Christine Dubois</h4>
-                            <p class="candidat-ville">Candidate DVD - Toulouse</p>
-                            <p class="candidat-discours">
-                                "Je respecte les animaux mais je ne vais pas imposer 
-                                des menus végétariens aux enfants. Les parents doivent 
-                                rester libres de leurs choix alimentaires. Notre programme 
-                                ne mentionne pas cette question."
-                            </p>
-                            <div class="engagement-badge neutral-badge">Aucun engagement</div>
-                        </div>
-                    </article>
-
-                    <!-- Candidat Indifférent 3 -->
-                    <article class="candidat-item neutral-item">
-                        <div class="candidat-photo">
-                            <div class="photo-placeholder">
-                                <span>Photo</span>
-                            </div>
-                        </div>
-                        <div class="candidat-info">
-                            <h4 class="candidat-name">Marc Fontaine</h4>
-                            <p class="candidat-ville">Candidat RN - Nice</p>
-                            <p class="candidat-discours">
-                                "Les associations animalistes veulent imposer leur idéologie. 
-                                Nos traditions françaises, comme la chasse et la gastronomie, 
-                                sont attaquées. Je défendrai la liberté de chacun sans céder 
-                                au lobby végane."
-                            </p>
-                            <div class="engagement-badge neutral-badge">Position hostile</div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-
-            <!-- Analyse comparative -->
-            <div class="analyse-box">
-                <h3 class="analyse-title">Analyse du clivage politique</h3>
-                <div class="analyse-content">
-                    <div class="analyse-column">
-                        <h4>Gauche et écologistes</h4>
-                        <p>Généralement favorables aux mesures de protection animale, 
-                        perçues comme cohérentes avec leurs valeurs environnementales 
-                        et sociales. Forte mobilisation sur les cantines et les spectacles.</p>
-                    </div>
-                    <div class="analyse-column">
-                        <h4>Droite traditionnelle</h4>
-                        <p>Position variable : certains élus s'emparent du sujet sur 
-                        l'angle "ville propre et agréable", d'autres le jugent secondaire 
-                        face aux enjeux économiques et sécuritaires.</p>
-                    </div>
-                    <div class="analyse-column">
-                        <h4>Extrême droite</h4>
-                        <p>Souvent réticente, dénonçant une "idéologie" qui menacerait 
-                        les traditions françaises. Mise en avant de la "liberté" contre 
-                        les "diktats" écologistes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Histoire -->
-    <section id="histoire" class="section section-histoire">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2 class="section-title">Perspective historique</h2>
-                <p class="section-intro">
-                    La question animale dans l'histoire politique française : 
-                    d'une absence totale à une émergence progressive
-                </p>
-            </div>
-
-            <!-- Timeline -->
-            <div class="timeline">
-                <!-- Événement 1 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">1850</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Loi Grammont</h3>
-                        <p class="timeline-text">
-                            Première loi française concernant les animaux : elle interdit 
-                            les mauvais traitements envers les animaux domestiques... 
-                            mais uniquement sur la voie publique ! Objectif : éviter 
-                            que le spectacle de la cruauté ne choque les passants.
-                        </p>
-                        <div class="timeline-image">
-                            <div class="photo-placeholder history-placeholder">
-                                <span>Illustration historique - Loi Grammont</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Événement 2 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">1963</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Loi sur la protection animale</h3>
-                        <p class="timeline-text">
-                            Extension de la protection : tout acte de cruauté devient 
-                            punissable, même dans le cadre privé. L'animal commence à 
-                            être reconnu pour lui-même, et non plus seulement comme 
-                            propriété ou spectacle public.
-                        </p>
-                        <div class="timeline-image">
-                            <div class="photo-placeholder history-placeholder">
-                                <span>Photo archives années 1960</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Événement 3 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">1976</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Déclaration universelle des droits de l'animal</h3>
-                        <p class="timeline-text">
-                            Proclamée à l'UNESCO, cette déclaration affirme que "tout 
-                            animal possède des droits" et que "le respect des animaux 
-                            par l'homme est inséparable du respect des hommes entre eux". 
-                            Un tournant philosophique majeur.
-                        </p>
-                        <div class="timeline-image">
-                            <div class="photo-placeholder history-placeholder">
-                                <span>UNESCO 1976</span>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Événement 4 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">2015</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Animaux reconnus comme "êtres sensibles"</h3>
-                        <p class="timeline-text">
-                            Réforme du Code civil : les animaux ne sont plus considérés 
-                            comme des "biens meubles" mais comme des "êtres vivants doués 
-                            de sensibilité". Un changement symbolique fort qui ouvre la 
-                            voie à de nouvelles protections juridiques.
-                        </p>
-                        <div class="timeline-image">
-                            <img src="https://images.unsplash.com/photo-1589952283406-b53a7d1347e8?w=600" 
-                                 alt="Animal sensible" 
-                                 loading="lazy">
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Événement 5 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">2020</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Première campagne municipale "animal-centrée"</h3>
-                        <p class="timeline-text">
-                            Lors des municipales 2020, la cause animale devient pour la 
-                            première fois un sujet de campagne à part entière. Le Parti 
-                            Animaliste présente 177 listes, les associations multiplient 
-                            les questionnaires aux candidats, et plusieurs grandes villes 
-                            intègrent des mesures concrètes dans leurs programmes.
-                        </p>
-                        <div class="timeline-image">
-                            <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600" 
-                                 alt="Élections municipales" 
-                                 loading="lazy">
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Événement 6 -->
-                <article class="timeline-item">
-                    <div class="timeline-marker">
-                        <div class="timeline-date">2024</div>
-                    </div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">La cause animale, enjeu électoral structurel</h3>
-                        <p class="timeline-text">
-                            Aujourd'hui, aucun candidat ne peut ignorer la question. 
-                            Les programmes municipaux incluent systématiquement un volet 
-                            "bien-être animal". De nombreuses villes ont créé des postes 
-                            d'adjoints dédiés, et les mesures concrètes se multiplient : 
-                            cantines, refuges, biodiversité urbaine...
-                        </p>
-                        <div class="timeline-image">
-                            <img src="https://images.unsplash.com/photo-1470549638415-0a0755be0619?w=600" 
-                                 alt="Ville moderne et nature" 
-                                 loading="lazy">
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Encadré réflexion -->
-            <div class="reflexion-box">
-                <h3>Évolution des mentalités</h3>
-                <p>
-                    En moins de deux siècles, le regard sur les animaux a radicalement changé. 
-                    D'objets de propriété à êtres sensibles, de la sphère privée à l'agenda 
-                    politique, la question animale reflète une transformation profonde de notre 
-                    rapport au vivant. Les élections municipales, au plus près des citoyens, 
-                    sont devenues le terrain d'expression privilégié de cette mutation sociétale.
-                </p>
-                <p class="reflexion-citation">
-                    "On reconnaît le degré de civilisation d'un peuple à la manière dont il 
-                    traite ses animaux." — Cette citation, souvent attribuée à Gandhi, résume 
-                    l'enjeu contemporain : les villes qui s'engagent pour les animaux ne font 
-                    pas que protéger des êtres sensibles, elles dessinent un modèle de société 
-                    plus respectueuse du vivant dans son ensemble.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>À propos</h4>
-                    <p>
-                        Dossier d'investigation sur l'émergence de la cause animale 
-                        dans les élections municipales françaises.
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <h4>Ressources</h4>
-                    <ul>
-                        <li><a href="#">L214.com</a></li>
-                        <li><a href="#">30millionsdamis.fr</a></li>
-                        <li><a href="#">parti-animaliste.fr</a></li>
-                        <li><a href="#">lpo.fr</a></li>
+                    <ul class="engagement-list">
+                        <li>✓ Menu végétarien quotidien dans les cantines</li>
+                        <li>✓ Fin des spectacles avec animaux</li>
+                        <li>✓ Sensibilisation dans les écoles</li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>Pour toute question ou suggestion :</p>
-                    <p><a href="mailto:contact@animaux-politique.fr">contact@animaux-politique.fr</a></p>
+            </article>
+
+            <!-- Carte Association 2 -->
+            <article class="association-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600"
+                         alt="Refuge pour animaux"
+                         loading="lazy">
                 </div>
+                <div class="card-content">
+                    <h3 class="card-title">Fondation 30 Millions d'Amis</h3>
+                    <p class="card-description">
+                        Interpelle les candidats sur la stérilisation des chats errants,
+                        la création de refuges municipaux et la lutte contre la maltraitance.
+                    </p>
+                    <ul class="engagement-list">
+                        <li>✓ Campagnes de stérilisation gratuites</li>
+                        <li>✓ Refuges municipaux aux normes</li>
+                        <li>✓ Police municipale formée</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Carte Association 3 -->
+            <article class="association-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?w=600"
+                         alt="Manifestation pour les animaux"
+                         loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Parti Animaliste</h3>
+                    <p class="card-description">
+                        Présente des candidats dans plusieurs villes et diffuse un
+                        programme en 50 mesures pour faire entrer la cause animale
+                        dans l'action municipale.
+                    </p>
+                    <ul class="engagement-list">
+                        <li>✓ Fin de l'élevage intensif périurbain</li>
+                        <li>✓ Espaces verts favorables à la biodiversité</li>
+                        <li>✓ Adjoint délégué au bien-être animal</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Carte Association 4 -->
+            <article class="association-card">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1589608152089-07f95f3641b9?w=600"
+                         alt="Biodiversité urbaine"
+                         loading="lazy">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">LPO - Ligue pour la Protection des Oiseaux</h3>
+                    <p class="card-description">
+                        Encourage les villes à préserver la biodiversité locale,
+                        installer des nichoirs et limiter la pollution lumineuse
+                        nocturne nuisible aux oiseaux et insectes.
+                    </p>
+                    <ul class="engagement-list">
+                        <li>✓ Plans de préservation de la biodiversité</li>
+                        <li>✓ Corridors écologiques urbains</li>
+                        <li>✓ Réduction de la pollution lumineuse</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+        <!-- Encadré statistiques -->
+        <div class="stats-box">
+            <div class="stat-item">
+                <div class="stat-number">78%</div>
+                <div class="stat-label">des Français favorables à plus de protection animale</div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Animaux & Politique. Tous droits réservés.</p>
+            <div class="stat-item">
+                <div class="stat-number">250+</div>
+                <div class="stat-label">villes sollicitées par les associations</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15</div>
+                <div class="stat-label">engagements types proposés aux candidats</div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <!-- Script JavaScript -->
-    <script src="script.js"></script>
+<!-- Section 2: Les Tendances -->
+<section id="tendances" class="section section-tendances">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">Pourquoi cette tendance ?</h2>
+            <p class="section-intro">
+                Plusieurs facteurs expliquent l'émergence de la cause animale
+                comme enjeu électoral municipal
+            </p>
+        </div>
+
+        <div class="tendances-grid">
+            <!-- Raison 1 -->
+            <article class="tendance-card card-primary">
+                <div class="tendance-icon">📊</div>
+                <h3 class="tendance-title">Évolution sociétale</h3>
+                <p class="tendance-text">
+                    La sensibilité envers les animaux a considérablement augmenté.
+                    Près de 50% des foyers français possèdent un animal de compagnie.
+                    Les scandales d'élevages et d'abattoirs ont éveillé les consciences.
+                </p>
+                <div class="tendance-image">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600"
+                         alt="Famille avec animal"
+                         loading="lazy">
+                </div>
+            </article>
+
+            <!-- Raison 2 -->
+            <article class="tendance-card card-secondary">
+                <div class="tendance-icon">🌱</div>
+                <h3 class="tendance-title">Lien avec l'écologie</h3>
+                <p class="tendance-text">
+                    La cause animale rejoint les préoccupations environnementales :
+                    biodiversité, agriculture durable, réduction de la consommation
+                    de viande. Un électorat écologique de plus en plus mobilisé.
+                </p>
+                <div class="tendance-image">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600"
+                         alt="Nature en ville"
+                         loading="lazy">
+                </div>
+            </article>
+
+            <!-- Raison 3 -->
+            <article class="tendance-card card-accent">
+                <div class="tendance-icon">🏛️</div>
+                <h3 class="tendance-title">Compétences municipales élargies</h3>
+                <p class="tendance-text">
+                    Les villes ont des leviers d'action concrets : gestion des refuges,
+                    cantines scolaires, autorisations de spectacles, espaces verts,
+                    sensibilisation... Des mesures visibles et applicables rapidement.
+                </p>
+                <div class="tendance-image">
+                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=600"
+                         alt="Mairie et ville"
+                         loading="lazy">
+                </div>
+            </article>
+
+            <!-- Raison 4 -->
+            <article class="tendance-card card-highlight">
+                <div class="tendance-icon">👥</div>
+                <h3 class="tendance-title">Pression électorale</h3>
+                <p class="tendance-text">
+                    Les défenseurs des animaux représentent un électorat mobilisé
+                    et capable de faire basculer des scrutins serrés. Les candidats
+                    cherchent à capter ces voix sans s'aliéner d'autres segments.
+                </p>
+                <div class="tendance-image">
+                    <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600"
+                         alt="Vote et élection"
+                         loading="lazy">
+                </div>
+            </article>
+        </div>
+
+        <!-- Citation -->
+        <blockquote class="quote-block">
+            <p class="quote-text">
+                "La question animale n'est plus une question de niche. Elle traverse
+                tous les partis et toutes les générations. Les élus locaux l'ont compris."
+            </p>
+            <cite class="quote-author">— Sociologue spécialiste des mutations politiques</cite>
+        </blockquote>
+    </div>
+</section>
+
+<!-- Section 3: Les Candidats -->
+<section id="candidats" class="section section-candidats">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">Position des candidats</h2>
+            <p class="section-intro">
+                Entre engagements assumés et indifférence persistante,
+                un clivage politique se dessine
+            </p>
+        </div>
+
+        <!-- Sous-section Pro-Protection -->
+        <div class="candidats-subsection pro-protection">
+            <h3 class="subsection-title">
+                <span class="title-icon">✓</span>
+                Les candidats engagés pour la protection animale
+            </h3>
+
+            <div class="candidats-list">
+                <!-- Candidat Pro 1 - Paris -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <!-- Placeholder photo candidat -->
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Pierre-Yves Bournazel</h4>
+                        <p class="candidat-ville">Candidat - Paris</p>
+                        <p class="candidat-discours">
+                            "C'est le rôle de la municipalité de veiller au bien-être
+                            des animaux. Nous créerons de nouveaux parcs et espaces canins,
+                            installerons 1 000 distributeurs de sacs biodégradables,
+                            mettrons en place une brigade dédiée à la maltraitance animale
+                            et nommerons un adjoint municipal dédié à la condition animale."
+                        </p>
+                        <div class="engagement-badge">Programme structuré</div>
+                    </div>
+                </article>
+
+                <!-- Candidat Pro 2 - Paris -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Sophia Chikirou</h4>
+                        <p class="candidat-ville">Candidate - Paris</p>
+                        <p class="candidat-discours">
+                            "Les animaux sont encore vus comme une nuisance. Je veux
+                            faire de Paris la ville du bien-être animal en créant des
+                            espaces où les chiens peuvent être sans laisse et en appliquant
+                            réellement la charte du bien-être animal."
+                        </p>
+                        <div class="engagement-badge">Charte bien-être animal</div>
+                    </div>
+                </article>
+
+                <!-- Candidat Pro 3 - Lyon -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Anaïs Belouassa-Cherifi</h4>
+                        <p class="candidat-ville">Candidate LFI - Lyon</p>
+                        <p class="candidat-discours">
+                            "Si je suis élue, je fermerai le zoo du parc de la Tête d'Or.
+                            Nous arrêterons immédiatement la reproduction et les nouvelles
+                            acquisitions, placerons les animaux dans des refuges et
+                            interdirons les spectacles avec animaux, salons animaliers
+                            et tournages utilisant des animaux."
+                        </p>
+                        <div class="engagement-badge">Charte PAZ signée</div>
+                    </div>
+                </article>
+
+                <!-- Candidat Pro 4 - Montpellier -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Parti Animaliste</h4>
+                        <p class="candidat-ville">Alliance municipale - Montpellier</p>
+                        <p class="candidat-discours">
+                            "Notre alliance avec Place publique et Génération écologie
+                            intègre des mesures fortes de protection animale dans le
+                            programme municipal. Les animaux auront une voix au conseil
+                            municipal de Montpellier."
+                        </p>
+                        <div class="engagement-badge">Alliance décembre 2025</div>
+                    </div>
+                </article>
+
+                <!-- Candidat Pro 5 - Paris -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Rachida Dati</h4>
+                        <p class="candidat-ville">Candidate - Paris</p>
+                        <p class="candidat-discours">
+                            "Nous ouvrirons les parcs aux chiens tenus en laisse,
+                            créerons des sentiers 'Paris 4 pattes' par arrondissement,
+                            appliquerons des amendes plus strictes pour les déjections
+                            et installerons un columbarium pour animaux décédés."
+                        </p>
+                        <div class="engagement-badge">Mesures pro-chien</div>
+                    </div>
+                </article>
+
+                <!-- Candidat Pro 6 - Paris -->
+                <article class="candidat-item pro-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Photo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Sarah Knafo</h4>
+                        <p class="candidat-ville">Candidate - Paris</p>
+                        <p class="candidat-discours">
+                            "Face au manque d'espaces verts adaptés aux animaux,
+                            nous ouvrirons les espaces verts aux chiens tenus en laisse
+                            et améliorerons l'accessibilité des taxis pour les animaux."
+                        </p>
+                        <div class="engagement-badge">Accès espaces verts</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Sous-section Mobilisation associative -->
+        <div class="candidats-subsection indifferents">
+            <h3 class="subsection-title">
+                <span class="title-icon">📢</span>
+                Mobilisation associative et interpellations
+            </h3>
+
+            <div class="candidats-list">
+                <!-- Association 1 - Pau -->
+                <article class="candidat-item neutral-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Logo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">Animal Cross</h4>
+                        <p class="candidat-ville">Association - Pau</p>
+                        <p class="candidat-discours">
+                            L'association a envoyé un questionnaire à tous les candidats
+                            de Pau avec 12 propositions concrètes sur la protection animale,
+                            la gestion des animaux errants, le soutien aux associations et
+                            l'éthique publique. Une démarche transparente pour interpeller
+                            les futurs élus.
+                        </p>
+                        <div class="engagement-badge neutral-badge">Questionnaire 2026</div>
+                    </div>
+                </article>
+
+                <!-- Association 2 - National -->
+                <article class="candidat-item neutral-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Logo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">ARGOS 42</h4>
+                        <p class="candidat-ville">Association nationale</p>
+                        <p class="candidat-discours">
+                            ARGOS 42 a lancé une charte d'engagement pour les candidats
+                            aux municipales 2026, portant sur les chats errants, les refuges,
+                            les salons animaliers, l'éducation publique et les solutions
+                            non-cruelles aux nuisances. Plusieurs candidats l'ont déjà signée.
+                        </p>
+                        <div class="engagement-badge neutral-badge">Charte nationale</div>
+                    </div>
+                </article>
+
+                <!-- Association 3 - National -->
+                <article class="candidat-item neutral-item">
+                    <div class="candidat-photo">
+                        <div class="photo-placeholder">
+                            <span>Logo</span>
+                        </div>
+                    </div>
+                    <div class="candidat-info">
+                        <h4 class="candidat-name">PAZ (Paris Animaux Zoopolis)</h4>
+                        <p class="candidat-ville">Association nationale</p>
+                        <p class="candidat-discours">
+                            PAZ interpelle les candidats sur la question des animaux sauvages
+                            en captivité, notamment les zoos municipaux. L'association demande
+                            des engagements clairs pour la fermeture progressive des zoos et
+                            l'interdiction des spectacles avec animaux.
+                        </p>
+                        <div class="engagement-badge neutral-badge">Campagne zoos 2026</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Analyse comparative -->
+        <div class="analyse-box">
+            <h3 class="analyse-title">Analyse de la campagne municipale 2026</h3>
+            <div class="analyse-content">
+                <div class="analyse-column">
+                    <h4>Paris : tous les candidats en parlent</h4>
+                    <p>Pour la première fois, tous les grands candidats parisiens
+                        intègrent des mesures concrètes sur les animaux : espaces canins,
+                        bien-être animal, adjoint dédié. Le sujet n'est plus clivant
+                        politiquement mais devient un marqueur de ville moderne et agréable.</p>
+                </div>
+                <div class="analyse-column">
+                    <h4>Lyon : rupture radicale proposée</h4>
+                    <p>Avec la proposition de fermeture du zoo de la Tête d'Or par
+                        Anaïs Belouassa-Cherifi, Lyon pourrait connaître un tournant
+                        historique. Cette mesure forte divise mais pose la question de
+                        l'avenir des animaux sauvages en captivité dans les villes.</p>
+                </div>
+                <div class="analyse-column">
+                    <h4>Mobilisation associative nationale</h4>
+                    <p>Les associations (Animal Cross, ARGOS 42, PAZ) intensifient
+                        leur pression sur les candidats via questionnaires et chartes.
+                        Cette stratégie d'interpellation systématique force les candidats
+                        à se positionner clairement avant les élections.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Histoire -->
+<section id="histoire" class="section section-histoire">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">Perspective historique</h2>
+            <p class="section-intro">
+                La question animale dans l'histoire politique française :
+                d'une absence totale à une émergence progressive
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <!-- Événement 1 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">1850</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Loi Grammont</h3>
+                    <p class="timeline-text">
+                        Première loi française concernant les animaux : elle interdit
+                        les mauvais traitements envers les animaux domestiques...
+                        mais uniquement sur la voie publique ! Objectif : éviter
+                        que le spectacle de la cruauté ne choque les passants.
+                    </p>
+                    <div class="timeline-image">
+                        <div class="photo-placeholder history-placeholder">
+                            <span>Illustration historique - Loi Grammont</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Événement 2 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">1963</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Loi sur la protection animale</h3>
+                    <p class="timeline-text">
+                        Extension de la protection : tout acte de cruauté devient
+                        punissable, même dans le cadre privé. L'animal commence à
+                        être reconnu pour lui-même, et non plus seulement comme
+                        propriété ou spectacle public.
+                    </p>
+                    <div class="timeline-image">
+                        <div class="photo-placeholder history-placeholder">
+                            <span>Photo archives années 1960</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Événement 3 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">1976</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Déclaration universelle des droits de l'animal</h3>
+                    <p class="timeline-text">
+                        Proclamée à l'UNESCO, cette déclaration affirme que "tout
+                        animal possède des droits" et que "le respect des animaux
+                        par l'homme est inséparable du respect des hommes entre eux".
+                        Un tournant philosophique majeur.
+                    </p>
+                    <div class="timeline-image">
+                        <div class="photo-placeholder history-placeholder">
+                            <span>UNESCO 1976</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Événement 4 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2015</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Animaux reconnus comme "êtres sensibles"</h3>
+                    <p class="timeline-text">
+                        Réforme du Code civil : les animaux ne sont plus considérés
+                        comme des "biens meubles" mais comme des "êtres vivants doués
+                        de sensibilité". Un changement symbolique fort qui ouvre la
+                        voie à de nouvelles protections juridiques.
+                    </p>
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1589952283406-b53a7d1347e8?w=600"
+                             alt="Animal sensible"
+                             loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Événement 5 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2020</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Première campagne municipale "animal-centrée"</h3>
+                    <p class="timeline-text">
+                        Lors des municipales 2020, la cause animale devient pour la
+                        première fois un sujet de campagne à part entière. Le Parti
+                        Animaliste présente 177 listes, les associations multiplient
+                        les questionnaires aux candidats, et plusieurs grandes villes
+                        intègrent des mesures concrètes dans leurs programmes.
+                    </p>
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600"
+                             alt="Élections municipales"
+                             loading="lazy">
+                    </div>
+                </div>
+            </article>
+
+            <!-- Événement 6 -->
+            <article class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-date">2024</div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">La cause animale, enjeu électoral structurel</h3>
+                    <p class="timeline-text">
+                        Aujourd'hui, aucun candidat ne peut ignorer la question.
+                        Les programmes municipaux incluent systématiquement un volet
+                        "bien-être animal". De nombreuses villes ont créé des postes
+                        d'adjoints dédiés, et les mesures concrètes se multiplient :
+                        cantines, refuges, biodiversité urbaine...
+                    </p>
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1470549638415-0a0755be0619?w=600"
+                             alt="Ville moderne et nature"
+                             loading="lazy">
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Encadré réflexion -->
+        <div class="reflexion-box">
+            <h3>Évolution des mentalités</h3>
+            <p>
+                En moins de deux siècles, le regard sur les animaux a radicalement changé.
+                D'objets de propriété à êtres sensibles, de la sphère privée à l'agenda
+                politique, la question animale reflète une transformation profonde de notre
+                rapport au vivant. Les élections municipales, au plus près des citoyens,
+                sont devenues le terrain d'expression privilégié de cette mutation sociétale.
+            </p>
+            <p class="reflexion-citation">
+                "On reconnaît le degré de civilisation d'un peuple à la manière dont il
+                traite ses animaux." — Cette citation, souvent attribuée à Gandhi, résume
+                l'enjeu contemporain : les villes qui s'engagent pour les animaux ne font
+                pas que protéger des êtres sensibles, elles dessinent un modèle de société
+                plus respectueuse du vivant dans son ensemble.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <p>
+                    Dossier d'investigation sur l'émergence de la cause animale
+                    dans les élections municipales françaises.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Ressources</h4>
+                <ul>
+                    <li><a href="#">L214.com</a></li>
+                    <li><a href="#">30millionsdamis.fr</a></li>
+                    <li><a href="#">parti-animaliste.fr</a></li>
+                    <li><a href="#">lpo.fr</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Pour toute question ou suggestion :</p>
+                <p><a href="mailto:contact@animaux-politique.fr">contact@animaux-politique.fr</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Animaux & Politique. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Script JavaScript -->
+<script src="script.js"></script>
 </body>
 </html>
